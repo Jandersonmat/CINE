@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recomendador_peli</title>
+  </head>
+  <body>
+    <main>
+      <section id="inicio">
+        <h1>Recomendador de películas</h1>
+        <p class="eslogan">Soy tu asesor de cine</p>
+        <p>Ingresa tu edad y te recomendamos una película.</p>
+        <form>
+            <label for="edad-usuario">Tu edad</label>
+            <input type="number" id="edad-usuario" min="1" max="120" required placeholder="ej:25">
+            <button type="submit">Recomiendame</button>
+            <p id="mensaje-error"></p>
+        </form>
+
+      </section>
+
+      <section id="resultado">
+
+      </section>
+    </main>
+  </body>
+</html>
