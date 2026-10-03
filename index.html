@@ -4,40 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recomendador de películas</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/app.js" defer></script>
   </head>
-<body>
+  <body>
     <main>
-      <section id="inicio">
-        <h1>Recomendador de películas</h1>
-        <p class="eslogan">Soy tu asesor de cine</p>
-        <p>Ingresa tu edad y te recomendamos una película.</p>
-        <form>
-          <label for="edad-usuario">Tu edad</label>
-          <input
-            type="number"
-            id="edad-usuario"
-            min="1"
-            max="120"
-            required
-            placeholder="Ej: 25"
-          />
-          <button type="submit">Recomiéndame</button>
-          <p id="mensaje-error"></p>
-        </form>
+      <section id="inicio" class="pantalla">
+        <div class="tarjeta">
+          <h1>Recomendador de películas</h1>
+          <p class="eslogan">Soy tu asesor de cine</p>
+          <p class="instruccion">Ingresa tu edad y te recomendamos una película.</p>
+          <form>
+            <label for="edad-usuario">Tu edad</label>
+            <input
+              type="number"
+              id="edad-usuario"
+              min="1"
+              max="120"
+              required
+              placeholder="Ej: 25"
+            />
+            <button type="submit">Recomiéndame</button>
+            <p id="mensaje-error" aria-live="polite">Ingresa una edad valida</p>
+          </form>
+        </div>
       </section>
 
-      <section id="resultado">
-        <h2 id="titulo-pelicula">titulo de prueba</h2>
-        <p id="descripcion-pelicula">descripcion prueba</p>
-        <p class="valoracion">
-          <span id="estrellas"></span>
-          <span id="puntaje"></span>
-        </p>
-        <button type="button" id="btn-volver">Probar con otra edad</button>
+      <section id="resultado" class="pantalla">
+        <div class="tarjeta">
+          <h2 id="titulo-pelicula">titulo de prueba</h2>
+          <p id="descripcion-pelicula">descripcion prueba</p>
+          <p class="valoracion">
+            <span id="estrellas"></span>
+            <span id="puntaje"></span>
+          </p>
+          <button type="button" id="btn-volver">Probar con otra edad</button>
+        </div>
       </section>
     </main>
-
-</body>
+  </body>
 </html>
